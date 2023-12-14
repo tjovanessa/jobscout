@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - JobsCout</title>
+    <link rel="icon" href="assets/simplelogo.png">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img id="logo" src="assets/logo.png" alt=""></a>
+        <div class="nav-link">
+            <a href="index.html">Home</a>
+            <a href="companyprofiles.html">Company Profiles</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+        <div class="nav-right">
+            <a href="signup.html">Welcome!</a>
+            <!-- <a href="signup.html">Login</a> -->
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="banner">
+            <div class="isi-banner">
+                <div class="text">
+                    <h1 class="h1">JobsCout – Your Gateway to Career Excellence!</h1>
+                    <p class="p1">As the leading platform in the realm of career advancement, JobsCout is committed to revolutionizing the job-seeking experience. With an unwavering dedication to excellence, we offer a comprehensive suite of tools and resources meticulously designed to navigate the dynamic landscape of employment opportunities. At JobsCout, we believe in empowering individuals with the knowledge and support they need to not only secure their dream job but also to thrive in their professional journey.</p>
+                    <a class="button" href="aboutus.html"><button id="button1">See more about us?</button></a>
+                </div>
+                <div class="sign-box">
+                    <form action="" id="form">
+                        <h1 class="h2">JobsCout Sign Up</h1>
+                        <label for="fullname">Full Name*</label>
+                        <input type="text" name="fullname" id="full-name-input" placeholder="full Name">
+                        <p class="er" id="error1"></p>
+                        <label for="email">Email Address*</label>
+                        <input type="email" name="email" id="email-input" placeholder="example@gmail.com">
+                        <p class="er" id="error2"></p>
+                        <label for="phone">Phone Number*</label>
+                        <input type="text" name="phone" id="phone-input" placeholder="must be a valid phone number">
+                        <p class="er" id="error3"></p>
+                        <label for="password">Create Password*</label>
+                        <input type="password" name="password" id="password-input" placeholder="must be alphanumeric">
+                        <p class="er" id="error4"></p>
+                        <label for="password1">Confirm Password*</label>
+                        <input type="password" name="password1" id="password1-input" placeholder="re-enter password">
+                        <p class="er" id="error5"></p>
+                        <!-- <input type="checkbox" aria-checked="false">
+                        <label id="small-text">I agree to the</label>
+                        <div class="terms">
+                            <label id="small-text">I agree to the</p>
+                            <label id="small-oren" href="terms.html">Terms of Service</a>
+                        </div> -->
+                        <div class="check">
+                            <input type="checkbox" name="terms" id="t1">
+                            <label for="terms" id="t2">
+                                <p id="small-text">I agree to the</p>
+                                <a id="small-oren" href="terms.html">Terms of Service</a>
+                            </label>
+                        </div>
+                        <!-- <label class="check">
+                            <input type="checkbox" name="terms" id="t1">
+                            I agree to the
+                            <a href="terms.html">Terms of Service</a>
+                        </label> -->
+                        <input id="submit" type="submit" value="Sign Up">
+                        <p class="er" id="error6"></p>
+                    </form>
+                </div>
+                <!-- <img id="illustration" src="assets/illustration.png" alt="">     -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img id="logo1" src="assets/logo.png" alt="">
+        <p class="p-footer">© 2023 JobsCout, Inc. Logos, illustrations, company names, and any other trademarks or registered trademarks are belong to their respective owners. All Rights Reserved.</p>
+        <div class="nav-link1">
+            <a href="">Terms of Service</a>
+            <a href="">Contact Us</a>
+            <a href="">Send Feedback</a>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

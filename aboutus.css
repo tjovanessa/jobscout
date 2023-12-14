@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    align-items: center;
+}
+
+body {
+    background-image: url("assets/bolabg.png");
+    background-size: cover;
+    background-color: #000000;
+}
+
+.header {
+    height: 110px;
+    background-color: #292929f0;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    align-self: center;
+}
+
+.nav-link a {
+    padding-inline: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.nav-link a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header .active {
+    color: #FFA31A;
+}
+
+.nav-right {
+    margin-right: 50px;
+    width: 140px;
+    align-self: center;
+    text-align-last: right;
+}
+
+.nav-right a {
+    padding-inline: 15px;
+    padding-block: 5px;
+    margin-right: 10px;
+    color: #FFA31A;
+    text-decoration: none;
+    border: 2px solid #FFA31A;
+    border-radius: 5px;
+}
+
+.nav-right a:hover{
+    background-color: #FFA31A;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#logo {
+    width: 140px;
+    height: 30px;
+    margin-left: 50px;
+    align-self: center;
+}
+
+/* AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT */
+/* AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT */
+/* AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT */
+
+.button {
+    text-decoration: none;
+    text-align: center;
+}
+
+.content {
+    padding-top: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    text-align: start;
+}
+
+.h1 {
+    color: #FFA31A;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.p1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    /* line-height: 30px; */
+    /* width: 800px; */
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#gallery {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: -4px;
+    bottom: 0;
+}
+
+.h2 {
+    color: #FFA31A;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    right: 120px;
+}
+
+.p2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    right: 120px;
+}
+
+.why {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-content: center;
+}
+
+/* .top-job {
+    padding: 50px;
+} */
+
+.job-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    right: 120px;
+}
+
+.job {
+    /* background-color: #FFFFFF; */
+    border: 2px solid rgba(255, 232, 197, 0.35);
+    border-radius: 10px;
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.job:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: #8d7f6968;
+}
+
+.job {
+    text-align: center;
+    line-height: 40px;
+    padding: 20px;
+    padding-inline: 50px;
+}
+
+.job:hover span {
+    display: none;
+}
+
+#job1:hover::before {
+    content: "We celebrate diversity and understand the strength it brings to workplaces. JobsCout is committed to connecting employers with a broad spectrum of talented individuals, fostering an inclusive and vibrant professional community.";
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+#job2:hover::before {
+    content: "The platform that we provide is a hub of innovation. We leverage cutting-edge technology to provide an intuitive and seamless user experience, ensuring that both job seekers and employers stay at the forefront of the ever-evolving job market.";
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+#job3:hover::before {
+    content: "Recognizing that every career journey is unique, JobsCout tailors its services to meet individual needs. Our personalized approach ensures that each user receives the attention and resources necessary for their specific goals.";
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+#job4:hover::before {
+    content: "JobsCout is a community of like-minded individuals striving for excellence. Together, we foster an environment where shared insights create a vibrant community. Join us to connect, learn, and grow together in the pursuit of professional success.";
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.p3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    position: absolute;
+    top: 860px;
+    left: 120px;
+    right: 120px;
+}
+
+/* AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT */
+/* AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT */
+/* AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT */
+
+.footer {
+    background-color: #292929;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#logo1 {
+    width: 140px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.p-footer {
+    padding-top: 25px;
+    color: #BDBDBD;
+    font-weight: 300;
+    width: 700px;
+    text-align: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-link1 {
+    justify-content: center;
+    display: flex;
+}
+
+.nav-link1 a {
+    padding-top: 40px;
+    padding-inline: 25px;
+    color: #FFA31A;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.nav-link1 a:hover {
+    color: #FFFFFF;
+}

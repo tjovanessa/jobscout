@@ -70,7 +70,7 @@ jobList.forEach(job => {
                 <img class="job-image" src="${job.image}" alt="">
                 <div class="subflex1">
                     <div class="job-position">${job.position}</div>
-                    <a class="job-company" href="">${job.company}</a>
+                    <a class="job-company" href="companyoverview.html">${job.company}</a>
                     <div class="job-rating">
                         <div class="job-star">${job.star}</div>
                         <div class="job-review">${job.review}</div>
@@ -80,7 +80,7 @@ jobList.forEach(job => {
             <div class="job-desc">${job.location}</div>
             <div class="job-desc">${job.salary}</div>
             <div class="job-desc">${job.date}</div>
-            <a class="button" href=""><button id="button2">Quick Apply</button></a>
+            <a class="button" href="signup.html"><button id="button2">Quick Apply</button></a>
         </div>
     `
     jobCont.innerHTML += html
