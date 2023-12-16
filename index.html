@@ -8,18 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html"><img id="logo" src="assets/logo.png" alt=""></a>
-        <div class="nav-link">
-            <a class="active" href="index.html">Home</a>
-            <a href="companyprofiles.html">Company Profiles</a>
-            <a href="aboutus.html">About Us</a>
+    <nav>
+        <a href="index.html"><div class="logo">
+            <div class="boxing">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+        </div></a>
+        <div class="nav-block">
+            <div class="toggler-box">
+                <button class="toggler" onclick="toggle()">
+                    &#9776; Menu
+                </button>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-link">
+                    <a class="link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="companyprofiles.html">Company Profiles</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="aboutus.html">About us</a>
+                </li>
+            </ul>    
         </div>
         <div class="nav-right">
-            <a href="signup.html">Sign Up</a>
-            <!-- <a href="signup.html">Login</a> -->
+            <div class="boxing">
+                <a href="signup.html">Sign Up</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div class="content">
         <div class="banner">
@@ -29,7 +47,10 @@
                     <p class="p1">Spearhead strategic initiatives to drive revenue growth and brand visibility. Analyze market trends, identify opportunities, and cultivate lasting relationships with clients.</p>
                     <div id="d1">
                         <h1 class="h1-1">787</h1>
-                        <p class="p3">job opportunities in Indonesia right now</p>
+                        <div id="p787">
+                            <p class="p3">job opportunities in</p>
+                            <p class="p3">Indonesia right now</p>
+                        </div>
                     </div>
                     <p class="p2">Average monthly salary range from IDR 11.000.000 to IDR 14.000.000</p>
                 </div>
@@ -49,7 +70,7 @@
         <img id="logo1" src="assets/logo.png" alt="">
         <p class="p-footer">© 2023 JobsCout, Inc. Logos, illustrations, company names, and any other trademarks or registered trademarks are belong to their respective owners. All Rights Reserved.</p>
         <div class="nav-link1">
-            <a href="">Terms of Service</a>
+            <a href="terms.html">Terms of Service</a>
             <a href="">Contact Us</a>
             <a href="">Send Feedback</a>
         </div>

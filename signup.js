@@ -1,4 +1,15 @@
-// let username_array = [];
+function toggle() {
+    let nav = document.getElementById('nav-list')
+    nav.classList.toggle('show')
+}
+
+function success(ctr){
+    if(ctr == 6){
+        window.location.href = "companyprofiles.html"
+    }
+}
+
+let ctr = 0;
 
 document.getElementById('form').addEventListener('submit', function(e){
     e.preventDefault();
@@ -9,12 +20,14 @@ document.getElementById('form').addEventListener('submit', function(e){
     let password1 = document.getElementById('password1-input').value;
     let terms = document.getElementById('t1').checked;
 
+    ctr = 0;
     if(fullname === ''){
         document.getElementById('error1').innerHTML = '⚠ Full name can not be empty'
         return;
     }
     else{
         document.getElementById('error1').innerHTML = '';
+        ctr += 1;
     }
 
     if(email === ''){
@@ -27,6 +40,7 @@ document.getElementById('form').addEventListener('submit', function(e){
     }
     else{
         document.getElementById('error2').innerHTML = '';
+        ctr += 1;
     }
 
     if(phone === ''){
@@ -43,6 +57,7 @@ document.getElementById('form').addEventListener('submit', function(e){
     }
     else{
         document.getElementById('error3').innerHTML = '';
+        ctr += 1;
     }
 
     if(password === ''){
@@ -55,6 +70,7 @@ document.getElementById('form').addEventListener('submit', function(e){
     }
     else{
         document.getElementById('error4').innerHTML = '';
+        ctr += 1;
     }
 
     if(password1 === ''){
@@ -67,6 +83,7 @@ document.getElementById('form').addEventListener('submit', function(e){
     }
     else{
         document.getElementById('error5').innerHTML = '';
+        ctr += 1;
     }
 
     if(terms == false){
@@ -74,45 +91,8 @@ document.getElementById('form').addEventListener('submit', function(e){
     }
     else{
         document.getElementById('error6').innerHTML = '';
+        ctr += 1;
     }
-    
-    // if(username === ''){
-    //     // validasi kosong
-    //     document.getElementById('error').innerHTML = 'username masih kosong'
-    //     return;
-    // }
-    // else if(username.length > 8){
-    //     // validasi panjang
-    //     document.getElementById('error').innerHTML = 'username maksimal 8 karakter'
-    // }
-    // else if(username_array.includes(username)){
-    //     // validasi unique
-    //     document.getElementById('error').innerHTML = 'username sudah terpakai'
-    //     console.log(username_array)
-    //     return;
-    // }
-    // else if(password === ''){
-    //     document.getElementById('error').innerHTML = 'password masih kosong'
-    //     return;
-    // }
-    // else if(email === ''){
-    //     document.getElementById('error').innerHTML = 'email masih kosong'
-    //     return;
-    // }
-    // else if(!email.endsWith('@binus.ac.id')){
-    //     // validasi email
-    //     document.getElementById('error').innerHTML = 'email harus diakhiri @binus.ac.id'
-    //     return;
-    // }
-    // else if(isNaN(phone)){
-    //     // validasi angka
-    //     document.getElementById('error').innerHTML = 'phone number harus berupa angka'
-    // }
-    // else{
-    //     // kalau semua validasi tidak terlanggar
-    //     document.getElementById('error').innerHTML = '';
-    //     username_array.push(username);
-    //     console.log(username_array)
-    //     return;
-    // }
+
+    success(ctr);
 })

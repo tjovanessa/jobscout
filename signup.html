@@ -8,18 +8,36 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html"><img id="logo" src="assets/logo.png" alt=""></a>
-        <div class="nav-link">
-            <a href="index.html">Home</a>
-            <a href="companyprofiles.html">Company Profiles</a>
-            <a href="aboutus.html">About Us</a>
+    <nav>
+        <a href="index.html"><div class="logo">
+            <div class="boxing">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+        </div></a>
+        <div class="nav-block">
+            <div class="toggler-box">
+                <button class="toggler" onclick="toggle()">
+                    &#9776; Menu
+                </button>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-link">
+                    <a class="link" href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="companyprofiles.html">Company Profiles</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="aboutus.html">About us</a>
+                </li>
+            </ul>    
         </div>
         <div class="nav-right">
-            <a href="signup.html">Welcome!</a>
-            <!-- <a href="signup.html">Login</a> -->
+            <div class="boxing">
+                <a href="signup.html">Sign Up</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div class="content">
         <div class="banner">
@@ -30,13 +48,13 @@
                     <a class="button" href="aboutus.html"><button id="button1">See more about us?</button></a>
                 </div>
                 <div class="sign-box">
-                    <form action="" id="form">
+                    <form action="" id="form" onsubmit="success()">
                         <h1 class="h2">JobsCout Sign Up</h1>
                         <label for="fullname">Full Name*</label>
-                        <input type="text" name="fullname" id="full-name-input" placeholder="full Name">
+                        <input type="text" name="fullname" id="full-name-input" placeholder="full name">
                         <p class="er" id="error1"></p>
                         <label for="email">Email Address*</label>
-                        <input type="email" name="email" id="email-input" placeholder="example@gmail.com">
+                        <input type="email" name="email" id="email-input" placeholder="example@binus.ac.id">
                         <p class="er" id="error2"></p>
                         <label for="phone">Phone Number*</label>
                         <input type="text" name="phone" id="phone-input" placeholder="must be a valid phone number">
@@ -78,7 +96,7 @@
         <img id="logo1" src="assets/logo.png" alt="">
         <p class="p-footer">© 2023 JobsCout, Inc. Logos, illustrations, company names, and any other trademarks or registered trademarks are belong to their respective owners. All Rights Reserved.</p>
         <div class="nav-link1">
-            <a href="">Terms of Service</a>
+            <a href="terms.html">Terms of Service</a>
             <a href="">Contact Us</a>
             <a href="">Send Feedback</a>
         </div>

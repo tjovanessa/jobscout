@@ -14,21 +14,29 @@ body {
     background-color: #000000;
 }
 
-.header {
-    height: 110px;
-    background-color: #292929f0;
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
+    height: 110px;
+    background-color: #292929f0;
     top: 0;
     z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-link {
     align-self: center;
 }
 
-.nav-link a {
+.link {
     padding-inline: 25px;
     color: #ffffff;
     text-decoration: none;
@@ -41,15 +49,8 @@ body {
     cursor: pointer;
 }
 
-.header .active {
+.active {
     color: #FFA31A;
-}
-
-.nav-right {
-    margin-right: 50px;
-    width: 140px;
-    align-self: center;
-    text-align-last: right;
 }
 
 .nav-right a {
@@ -62,18 +63,44 @@ body {
     border-radius: 5px;
 }
 
+.boxing {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+
+.logo, .nav-right {
+    text-align: center;
+}
+
+.logo img, .nav-right a{
+    align-items: center;
+    max-width: 140px;
+    height: 100%;
+    margin: 0px 20px;
+    align-self: center;
+}
+
 .nav-right a:hover{
     background-color: #FFA31A;
     color: #FFFFFF;
     cursor: pointer;
 }
 
-#logo {
-    width: 140px;
-    height: 30px;
-    margin-left: 50px;
-    align-self: center;
+.toggler {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0px 20px;
+    height: 100%;
+    width: 100%;
 }
+
+/* AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT */
+/* AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT */
+/* AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT AWAL BAGIAN CONTENT */
 
 .banner {
     background-color: #796B57;
@@ -84,9 +111,17 @@ body {
     text-align: center;
 }
 
-.isi-banner {
+/* .isi-banner {
     display: flex;
     justify-content: space-around;
+    text-align: left;
+} */
+
+.isi-banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    /* justify-content: space-around; */
     text-align: left;
 }
 
@@ -95,12 +130,12 @@ body {
     font-size: 58px;
     font-weight: 800;
     line-height: 80px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 #d1 {
     display: flex;
-    width: 600px;
+    /* width: 600px; */
 }
 
 .p1 {
@@ -108,7 +143,7 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    width: 800px;
+    /* width: 800px; */
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -117,7 +152,7 @@ body {
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
-    width: 550px;
+    /* width: 550px; */
     padding-top: 5px;
     padding-bottom: 10px;
 }
@@ -127,23 +162,32 @@ body {
     font-size: 58px;
     font-weight: 800;
     line-height: 80px;
-    width: 120px;
+    /* width: 120px; */
+}
+
+#p787 {
+    /* margin: 0px;
+    padding: 0px;
+    justify-content: center; */
+    padding-left: 20px;
 }
 
 .p3 {
     display: flex;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    width: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* width: 150px; */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
 }
 
 #illustration {
-    width: 480px;
-    height: 400px;
+    width: 100%;
+    /* max-width: fit-content; */
+    /* width: 480px; */
+    /* height: 400px; */
     align-self: center;
     margin-top: -20px;
 }
@@ -176,6 +220,7 @@ body {
 
 .top-job {
     padding: 50px;
+    text-align: center;
 }
 
 .top-job h1 {
@@ -202,9 +247,13 @@ body {
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 20px;
-    height: 250px;
+    height: auto;
     text-align: center;
 }
+
+/* #jobs {
+    height: auto;
+} */
 
 .flex1 {
     display: flex;
@@ -310,6 +359,10 @@ body {
     cursor: pointer;
 }
 
+/* AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT */
+/* AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT */
+/* AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT AKHIR BAGIAN CONTENT */
+
 .footer {
     background-color: #292929;
     padding-top: 40px;
@@ -353,4 +406,42 @@ body {
 
 .nav-link1 a:hover {
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        top: 110px;
+        position: absolute;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        right: 0px;
+        transform: translateY(-200%);
+        transition: all 0.5s;
+        background-color: #292929f0;
+    }
+
+    .nav-list.show {
+        transform: translateY(0%);
+    }
+
+    .toggler {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: #FFA31A;
+        font-size: 16px;
+    }
+
+    .job-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-footer {
+        width: 100%;
+    }
 }

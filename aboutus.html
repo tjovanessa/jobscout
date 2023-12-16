@@ -8,18 +8,36 @@
     <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html"><img id="logo" src="assets/logo.png" alt=""></a>
-        <div class="nav-link">
-            <a href="index.html">Home</a>
-            <a href="companyprofiles.html">Company Profiles</a>
-            <a class="active" href="aboutus.html">About Us</a>
+    <nav>
+        <a href="index.html"><div class="logo">
+            <div class="boxing">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+        </div></a>
+        <div class="nav-block">
+            <div class="toggler-box">
+                <button class="toggler" onclick="toggle()">
+                    &#9776; Menu
+                </button>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-link">
+                    <a class="link" href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link" href="companyprofiles.html">Company Profiles</a>
+                </li>
+                <li class="nav-link">
+                    <a class="link active" href="aboutus.html">About us</a>
+                </li>
+            </ul>    
         </div>
         <div class="nav-right">
-            <a href="signup.html">Sign Up</a>
-            <!-- <a href="signup.html">Login</a> -->
+            <div class="boxing">
+                <a href="signup.html">Sign Up</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div class="content">
         <!-- <div class="banner">
@@ -43,44 +61,55 @@
             <p class="p1">JobsCout is a leading job seeking website that helps job seekers to find their dream job and employers to find the right candidates. JobsCout offers a wide range of tools and resources to help job seekers in their job search journey. The platform also offers a variety of job categories, including full-time, part-time, freelance, and remote jobs, catering to the diverse needs of job seekers. At JobsCout, we are not just a job seeking website; we are the architects of dreams, the matchmakers of talent, and the catalysts for professional success. Our mission is to empower both job seekers and employers, forging connections that transcend traditional hiring paradigms.</p>
             <p class="p1">As the leading platform in the realm of career advancement, JobsCout is committed to revolutionizing the job-seeking experience. With an unwavering dedication to excellence, we offer a comprehensive suite of tools and resources meticulously designed to navigate the dynamic landscape of employment opportunities. At JobsCout, we believe in empowering individuals with the knowledge and support they need to not only secure their dream job but also to thrive in their professional journey.</p>
             <p class="p1">Embark on a transformative journey with JobsCout as we provide an extensive range of job categories to suit your unique aspirations. Whether you seek the stability of a full-time position, the flexibility of part-time engagements, the autonomy of freelance projects, or the freedom of remote work, our platform caters to every dimension of your professional goals. Our commitment extends beyond the job listing – we empower you with insights, guidance, and support throughout your job search journey. JobsCout is more than a job board; it is your career companion, dedicated to helping you achieve your dream job.</p>
+            <p class="hh">Celebrating JobScout's Achievements</p>
+            <p class="hh-1">#1 Insigtful Website according to JAVAComp 2021</p>
+            <p class="hh">Our Location</p>
+            <p class="pp">Jl. Nangka I No.11, Lamper Kidul, Semarang 50249</p>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=jl nangka i 11 semarang selatan&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a><br><a href="https://embedgooglemap.2yu.co"></a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="why">
         <img id="gallery" src="assets/gallery.png" alt="">
-        <h2 class="h2">Why Choose JobsCout?</h2>
-        <p class="p2">Here are the values that our company upholds so that all principles, goals, paths, decisions and actions undertaken by the company will be in accordance with these values.</p>
-        <div class="job-cont">
+        <div id="test">
+            <h2 class="h2">Why Choose JobsCout?</h2>
+            <p class="p2">Here are the values that our company upholds so that all principles, goals, paths, decisions and actions undertaken by the company will be in accordance with these values.</p>
+            <div class="job-cont">
             <!-- <div class="job"><span>Inclusivity</span></div>
             <div class="job"><span>Innovation</span></div>
             <div class="job"><span>Personalized Approach</span></div>
             <div class="job"><span>Community Building</span></div> -->
-            <div class="job" id="job1"><span>
-                <div class="j1">Inclusivity</div>
-            </span></div>
-            <div class="job" id="job2"><span>
-                <div class="j2">Innovation</div>
-            </span></div>
-            <div class="job" id="job3"><span>
-                <div class="j3">Personalized Approach</div>
-            </span></div>
-            <div class="job" id="job4"><span>
-                <div class="j4">Community Building</div>
-            </span></div>
+                <div class="job" id="job1"><span>
+                    <div class="j1">Inclusivity</div>
+                </span></div>
+                <div class="job" id="job2"><span>
+                    <div class="j2">Innovation</div>
+                </span></div>
+                <div class="job" id="job3"><span>
+                    <div class="j3">Personalized Approach</div>
+                </span></div>
+                <div class="job" id="job4"><span>
+                    <div class="j4">Community Building</div>
+                </span></div>
+            </div>
+            <p class="p3">As your trusted career partner, JobsCout is more than a website – it's a commitment to your aspirations, a catalyst for change, and the bridge to your dream job or ideal candidate. Welcome to a world where careers flourish, and opportunities abound. Welcome to JobsCout – Your Gateway to Career Excellence!</p>
         </div>
-        <p class="p3">As your trusted career partner, JobsCout is more than a website – it's a commitment to your aspirations, a catalyst for change, and the bridge to your dream job or ideal candidate. Welcome to a world where careers flourish, and opportunities abound. Welcome to JobsCout – Your Gateway to Career Excellence!</p>
     </div>
 
     <div class="footer">
         <img id="logo1" src="assets/logo.png" alt="">
         <p class="p-footer">© 2023 JobsCout, Inc. Logos, illustrations, company names, and any other trademarks or registered trademarks are belong to their respective owners. All Rights Reserved.</p>
         <div class="nav-link1">
-            <a href="">Terms of Service</a>
+            <a href="terms.html">Terms of Service</a>
             <a href="">Contact Us</a>
             <a href="">Send Feedback</a>
         </div>
     </div>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="aboutus.js"></script>
 </body>
 </html>
